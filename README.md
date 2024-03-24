@@ -19,3 +19,7 @@ Small projects to learn about data structures and algorithms using Python:
 ### Trees: Make Your Own Wilderness Escape Story
 - Make a unique story experience by allowing the player to pick the next chapter of their adventure. 
 - This project uses a tree data structure to keep track of the different paths a user may choose. A TreeNode class keeps track of two things: (1) a portion of the story and (2) the choices a user can make to progress in the story.
+
+### Graphs: Build a Routing Program to Help Commuters
+- Create a program to help commuters get from one landmark to another by metro. We build a routing tool that uses breadth-first search, depth-first search, and Python dictionaries to accomplish this.
+- For the purpose of this project, we assume that it takes the same amount of time to get from each station to each of its connected neighboring stations.
