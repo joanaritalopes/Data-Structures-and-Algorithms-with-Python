@@ -23,3 +23,7 @@ Small projects to learn about data structures and algorithms using Python:
 ### Graphs: Build a Route Planning Tool to Help Commuters
 - Create a program to help commuters get from one landmark to another by metro. We build a routing tool that uses breadth-first search, depth-first search, and Python dictionaries to accomplish this.
 - For the purpose of this project, we assume that it takes the same amount of time to get from each station to each of its connected neighboring stations.
+
+### Graphs and Heaps: Traveling Salesperson
+- Find the shortest path that will allow to visit each city once, finishing at the city in which the journey started. This is a graph theory problem that is solved by using a Greedy Algorithm, algorithm usually used in optimization problems.
+- For the purpose of this project, the objective is to apply the same implementation of Dijkstra’s Algorithm that finds the path with the minimum cost from one vertex to the others in a graph. The algorithm finds such a path by always going to the nearest vertex. That's why it is a greedy algorithm.
