@@ -1,4 +1,4 @@
-from node import Node
+from data_structures.node import Node
 
 class LinkedList:
     """
@@ -11,17 +11,17 @@ class LinkedList:
     def get_head_node(self):
         return self.head_node
 
-    def insert(self, new_value):
+    def insert_at_beggining(self, new_value):
         new_node = Node(new_value)
         new_node.set_next_node(self.head_node)
         self.head_node = new_node
 
     def stringify_list(self):
-        string_list = ""
+        string_list = ''
         current_node = self.get_head_node()
         while current_node:
-            if current_node.get_value() != None:
-                string_list += str(current_node.get_value()) + "\n"
+            if current_node.get_value() is not None:
+                string_list += str(current_node.get_value()) + " --> "
             current_node = current_node.get_next_node()
         return string_list
 

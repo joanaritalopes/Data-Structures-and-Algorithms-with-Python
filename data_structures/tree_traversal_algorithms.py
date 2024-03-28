@@ -1,10 +1,12 @@
+from collections import deque
+
 ## Tree traversal algorithms
 
 #Breadth-first search
 def bfs(root_node, goal_value):
 
     # initialize frontier queue
-    path_queue = queue()
+    path_queue = deque()
 
     # add root path to the frontier
     initial_path = [root_node]

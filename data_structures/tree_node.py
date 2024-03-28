@@ -1,4 +1,5 @@
 # deque -> double-ended queue
+from collections import deque
 
 class TreeNode:
     def __init__(self, value):
@@ -6,7 +7,7 @@ class TreeNode:
         self.children = [] # references to other nodes
     
     def __str__(self):
-        stack = queue()
+        stack = deque()
         stack.append([self, 0])
         level_str = "\n"
         while len(stack) > 0:

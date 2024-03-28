@@ -16,8 +16,6 @@ def bfs(graph, start_vertex, target_value):
                 bfs_queue.append([neighbor, path + [neighbor]])
 
 
-
-
 def dfs(graph, current_vertex, target_value, visited=None):
     if visited is None:
         visited = []
