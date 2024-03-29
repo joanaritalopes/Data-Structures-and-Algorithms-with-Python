@@ -9,14 +9,13 @@ class TreeNode:
     def __str__(self):
         stack = deque()
         stack.append([self, 0])
-        level_str = "\n"
+        level_str = " "
         while len(stack) > 0:
             node, level = stack.pop()
         
             if level > 0:
-                level_str += "| "*(level-1)+ "|-"
-            level_str += str(node.value)
-            level_str += "\n"
+                level_str += " |" * (level-1) + "|-"
+            level_str += str(node.value) + '\n '
             level+=1
             for child in reversed(node.children):
                 stack.append([child, level])
